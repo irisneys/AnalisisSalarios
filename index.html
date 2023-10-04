@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./math.css">
+</head>
+<body>
+    <div class="container-card">
+        <h1>Análisis de Salarios</h1>
+        <img src="./assets/proyeEmpresa.png" alt="">
+        
+    </div>   
+
+    <div class="container">
+        
+        <div class="containerMedianaEmpresaYear">
+            <label for="datos">Mediana anual por empresa:</label>
+            <select name="Empresa" id="nombreEmpresa"></select>
+            <select name="year" id="yearEmpresa"></select>
+            <button>Calcular</button>
+            <div id="resultMedEmpresaYear"></div>
+        </div>
+        
+
+        <div class="containerProyeccionEmpresa">
+            <label for="datos">Proyeccion por empresa:</label>
+            <button>Generar</button>
+            <div id="resultProyEmpresa"></div>
+        </div>
+
+    <div class="containerMedianaPersona">
+        <label for="datos"> Mediana por persona:</label>
+        <select name="nombre" id="nombrePersona"></select>
+        <button>Calcular</button>
+        <div id="resultMedPersona"></div>
+    </div>
+    
+    <div class="containerProyeccionPersona">
+        <label for="datos">Proyeccion Persona:</label>
+        <button >Generar</button>
+        <div id="resultProyPersona"></div>
+    </div>
+        
+    <div class="containerMedianaGeneral">
+        <label for="datos">Mediana General</label>
+        <button >Generar</button>
+        <div id="resultMedGeneral"></div>
+    </div>
+    
+    <div class="containerCalcularMedianaTop10">
+        <label for="datos">Mediana Top10:</label>
+        <button >Generar</button>
+        <div id="resultMedTop10"></div>
+    </div>
+    </div>
+
+    <script src="./math.js"> </script>
+    <script src="./salarios.js"> </script>
+    <script src="./analisis.js"></script>
+    <script src="./code.js"></script>
+</body>
+</html>

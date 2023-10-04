@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #6c2d2c;
+    --secondary-color: #fcfcfc;
+    --background-color: #fcfbfb;
+    --box-shadow-color: #0d0d0d39;
+    --input-border-color: #d2beb9fb;
+    --button-hover-color: #fc4d21;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    box-sizing: border-box;
+    
+}
+.container-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container-card img {
+    width: 40%;
+    object-fit: cover;
+
+   
+}
+
+.container-card h1 { 
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 70px;
+    }
+
+.container{
+    width: 100% - 10px;
+    height: 100%;
+    padding-left:10px;
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;
+    padding-top: 20px;
+        
+    }
+
+
+.containerMedianaPersona, .containerProyeccionPersona, .containerMedianaEmpresaYear, .containerProyeccionEmpresa, .containerMedianaGeneral, .containerCalcularMedianaTop10 {
+    
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 3px 6px var(--box-shadow-color);
+    padding: 20px 20px 10px;
+    margin-bottom: 20px;
+    
+    
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select {
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: var(--input-border-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+button:focus {
+    outline: none;
+}
+
+.resultMedPersona {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Estilos responsivos para dispositivos móviles */
+    .containerMedianaPersona,
+        .containerProyeccionPersona,
+        .containerMedianaEmpresaYear,
+        .containerProyeccionEmpresa,
+        .containerMedianaGeneral,
+        .containerCalcularMedianaTop10 {
+        padding: 10px;
+        margin-right: 10px;
+        
+
+    }
+
+    input, button {
+        width: auto;
+    }
+        .container-card h1{
+        font-size: 30px;
+    }
+}
+
+@media  (min-width: 1080px) {
+    .container  {            
+        justify-content: center;
+        
+        
+        
+    }
+        .containerMedianaPersona,
+        .containerProyeccionPersona,
+        .containerMedianaEmpresaYear,
+        .containerProyeccionEmpresa,
+        .containerMedianaGeneral,
+        .containerCalcularMedianaTop10 {
+            width: 30vw;
+        }
+}
+
